@@ -14,7 +14,14 @@ cat << EOM > /var/www/html/index.html
   Welcome to ${PREFIX}'s app. hello TFFFF. 
   <!-- END -->
   
-  </div>
+  </div>cd /root/terraform-cloud
+
+# 1. Create a policy set from VCS.
+# 2. Enable automated policy as code
+# 3. Apply to hashicat-azure workspace
+terraform apply -auto-approve
+
+
   </body>
 </html>
 EOM
